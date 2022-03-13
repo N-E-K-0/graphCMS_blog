@@ -194,7 +194,7 @@ export const getCategoryPost = async (slug) => {
     }
   `;
 
-  const result = await request(graphqlAPI, query, { slug });
+  const result = await request(grapqlAPI, query, { slug });
 
   return result.postsConnection.edges;
 };
